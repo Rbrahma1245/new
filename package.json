@@ -1,8 +1,17 @@
 {
-  "name": "hh",
-  "private": true,
+  "name": "simpleform",
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rbrahma1245/new.git"
+  },
+  "keywords": [
+    "react form rahul"
+  ],
+  "author": "Rahul",
+  "license": "MIT",
+  "files": ["dist/**/*"],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
