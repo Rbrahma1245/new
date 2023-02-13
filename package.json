@@ -1,6 +1,6 @@
 {
-  "name": "simpleform",
-  "version": "1.0.0",
+  "name": "rahulform",
+  "version": "1.0.1",
   "description": "Creating declarative dynamic forms",
 
   "main": "dist/index.js",
