@@ -41,7 +41,6 @@ export const ArrayField: React.FC<FieldsArrayProps> = (props) => {
     defaultItemValue = "",
     classNames,
     nativeProps,
-    disabled,
     fieldArrayLabel,
   } = fieldProps;
 
@@ -88,7 +87,7 @@ export const ArrayField: React.FC<FieldsArrayProps> = (props) => {
 
             {(values || []).map((value: any, index: number) => (
                 <div
-                key={`${fieldProps.name}-${index}`}
+                key={`${fieldProps.name}-${index}-${value.name}`}
                 className="field-array-box"
               >
 

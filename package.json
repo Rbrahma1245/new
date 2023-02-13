@@ -1,36 +1,56 @@
 {
   "name": "simpleform",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Creating declarative dynamic forms",
+
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+ "jsnext:main": "dist/index.es.js",
+  "files": [
+    "dist/**/*"
+  ],
   "type": "module",
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rbrahma1245/new.git"
   },
   "keywords": [
-    "react form rahul"
+    "reactform rahul"
   ],
   "author": "Rahul",
   "license": "MIT",
-  "files": ["dist/**/*"],
+ 
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc",
+    "test": "jest"
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "formik": "^2.2.9",
-    "lodash": "^4.17.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "sass": "^1.58.0",
     "yup": "^1.0.0"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+},
   "devDependencies": {
+    "@types/jest": "^29.4.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "formik": "^2.2.9",
+    "jest": "^29.4.2",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.15.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.0.5",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
