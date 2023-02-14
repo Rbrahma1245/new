@@ -3,13 +3,17 @@
   "version": "1.0.1",
   "description": "Creating declarative dynamic forms",
 
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
- "jsnext:main": "dist/index.es.js",
+  "main": "dist/index.d.ts",
+  
+  
+
+
+  "type": "module",
+
   "files": [
     "dist/**/*"
   ],
-  "type": "module",
+
   
   "repository": {
     "type": "git",
@@ -24,6 +28,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest"
+  
   },
   "dependencies": {
     "clsx": "^1.2.1",
